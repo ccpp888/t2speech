@@ -1,16 +1,20 @@
 # Text to Speech
 
-Google Text to Speech API client to perform a range of functions supporting the copany Academy and (http://spelzee.com)
+Google Text to Speech API client to perform a range of functions supporting text to speech conversion and [Spelzee] (http://spelzee.com)
 
 ## Pre requisites
 
-Java install (min Java8)
+Install Java (min Java8)
 
-Maven install
+Install Maven (optional)
+
 
 ## Build
 
-run: mvn clean package
+Run using Maven
+```
+mvn clean package
+```
 
 Supports VSCode build task (tasks.json).
 
@@ -18,20 +22,24 @@ Supports VSCode build task (tasks.json).
 
 From the Cloud Console, create a service account, download its json credentials file, then set the appropriate environment variable:  
 
+```
 export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your-project-credentials.json
+```
 
 ## Run
 
 Within VSCode, run App.java (main)
 
-Or, from command line using 
+Or, from command line using java -jar {jar-with-dependencies}
 
 Supply args:
 1. Input containing text to convert to speech
 2. Output folder location
 
 E.g. 
-
+```
+java -jar t2speech-1.0.jar-with-dependencies.jar /tmp/in/allWords.txt /tmp/out/audio-files
+```
 
 
 ## Further help

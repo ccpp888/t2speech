@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Utils",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.ccpp.Utils",
+            "args": "",
+            "projectName": "s2text"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.ccpp.App",
+            "args": [
+                "/Users/cam/development/VSCodeProjects/s2text/weekly.txt",
+                "target/words"
+            ],
+            "projectName": "s2text"
+        }
+    ]
+}
